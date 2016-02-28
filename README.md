@@ -5,7 +5,7 @@ Rainbowstream in a container
 
 Awesome text based twitter client.
 
-# Run on Linux:
+## Run on Linux:
 
 ```
 $ docker run -it \
@@ -16,7 +16,7 @@ $ docker run -it \
     bbania/rainbowstream
 ```
 
-# Run on OSX:
+## Run on OSX:
 
 ```
 $ docker run -it \
