@@ -22,7 +22,13 @@ $ docker run -it \
 $ docker run -it \
     -v $HOME/.rainbow_oauth:/root/.rainbow_oauth \
     -v $HOME/.rainbow_config.json:/root/.rainbow_config.json \
-    --name rainbowstream \
+    --name my-rainbowstream \
     bbania/rainbowstream
+```
+
+Then, to reattach to existing container, issue:
+
+```
+docker start `docker ps -q -l -f NAME=my-rainbowstream` && docker attach `docker ps -q -l -f NAME=my-rainbowstream`
 ```
 
