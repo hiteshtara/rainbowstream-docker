@@ -7,7 +7,7 @@ RUN apk update && \
 RUN rm -rf /var/cache/apk/* \
     apk del build-base freetype-dev openjpeg-dev python-dev zlib-dev
 
-COPY ./.rainbow_config.json /root/.rainbow_config.json
+COPY ./configs/.rainbow_config.json /root/.rainbow_config.json
 
 ENTRYPOINT [ "rainbowstream" ]
 
